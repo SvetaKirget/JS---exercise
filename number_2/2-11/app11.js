@@ -9,9 +9,3 @@ if (!isNaN(a && b)) {
 } else {
   console.log("Ошибка");
 }
-
-
-// console.log(`Среднее арифметическое - ${(a + b) / 2}`);
-// console.log(`Среднее геометрическое - ${Math.sqrt(a * b)}`);
-// console.log(`Среднее гармоническое - ${(2 * a * b) / (a + b)}`);
-// console.log(`Среднее квадратичное - ${Math.sqrt((a ** 2 + b ** 2) / 2)}`);
