@@ -1,2 +1,2 @@
 const a = "Я-учу-javascript!";
-console.log(a.replaceAll("-","!"));
+console.log(a.replaceAll("-", "!"));

@@ -1,9 +1,4 @@
 const a = prompt("Введите дату");
 let date = a.split("-");
 let dateA = date.reverse().join();
-console.log(dateA.replaceAll(",","."));
-
-// const a = prompt("Введите дату");
-// let date = a.split("-");
-// let dateA = date.reverse().join("/");
-// console.log(dateA);
+console.log(dateA.replaceAll(",", "."));
