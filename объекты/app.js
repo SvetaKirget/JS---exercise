@@ -262,22 +262,22 @@
 
 // console.log(obj);
 
-// 16?
-let n = +prompt(``);
-let obj = {};
-let p = 1;
-let m = n;
-let arr = [];
-for (let i = 0; i < n; i++) {
-  arr.push(prompt(``));
-}
-if (arr[i] === `Минск`) {
-  console.log(true);
-} else console.log(false);
+// 16
+// let n = +prompt(``);
+// let obj = {};
+// let flag;
 
-obj.add = arr;
+// for (let i = 0; i < n; i++) {
+//   obj[i] = prompt(``).trim().toLowerCase();
+// }
+// for (let key in obj) {
+//   if (obj[key] === `минск`) {
+//     flag = true;
+//     break;
+//   } else flag = false;
+// }
 
-console.log(obj);
+// console.log(flag);
 
 // 17
 // let obj = {
@@ -298,8 +298,8 @@ console.log(obj);
 // // console.log(obj.add);
 // console.log(arr);
 
-// 18?
-// let obj = {
+// 18
+// const obj = {
 //   Коля: 1000,
 //   Вася: 500,
 //   Петя: 200,
@@ -307,8 +307,17 @@ console.log(obj);
 //   Наташа: 600,
 // };
 
-// console.log(`Зарплата Даши - ${Object.values(obj.Даша)}`);
-// console.log(`Зарплата Васи - ${Object.values(obj.Вася)}`);
+// const arr = Object.keys(obj);
+// const value = Object.values(obj);
+// let array = [];
+
+// for (let i = 0; i<arr.length; i++) {
+//   if (arr[i] == `Даша` || arr[i] == `Вася`) {
+//     array.push(value[i])
+//   }
+// }
+
+// console.log(array);
 
 // 19
 // let a = +prompt();
@@ -343,13 +352,16 @@ console.log(obj);
 // } else obj.avg = false;
 // console.log(obj);
 
-// 21 ?
+// 21
 // const arr = [10, 23, 45, 30, 38, 47, 56, 99];
 // let obj = {};
 
-// if (arr[i] % 2 === 0) {
-//     console.log(`Чётное число - ${obj.ar = arr[i]}`);
-// } else console.log(`Нечётное число - ${obj.ar = arr[i]}`);
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i] % 2 === 0) {
+//       obj.arr[i] = true;
+//   } else obj.arr[i] = false;
+// }
+// console.log(obj);
 
 // 22
 // let obj = {
@@ -364,3 +376,9 @@ console.log(obj);
 //     arr.push(obj[key])
 // }
 // console.log(arr);
+
+// 1 что объект не пустой
+// let obj = {};
+// let n = Object.keys(obj);
+// if (n.lenght > 0) console.log(`Full`);
+// else console.log(`Not full`);
