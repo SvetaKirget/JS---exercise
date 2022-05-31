@@ -135,99 +135,90 @@
 // const adults = people.filter((person) => person.age >= 20);
 // console.log(adults);
 
-// задачи на лекции и дз
-// 2
+// fff
 // let obj = {
-//       name: `Sveta`,
-//       age: 29,
-//       id: 10,
-//     };
-
-//     for (let keys in obj) {
-//       keys === `age` ? console.log(`YES`) : console.log(`NO`);
-//     }
-
-// 3 Имеется массив объектов. Получите из этого массива объект, где name === "Bob" и сохраните это в какой-либо переменной
-// const arr = [
-//   {
-//     name: `Jack`,
-//   },
-//   {
-//     name: `Joe`,
-//   },
-//   {
-//     name: `John`,
-//   },
-//   {
-//     name: `Bob`,
-//   },
-// ];
-// let newArr = arr.filter(el => el.name === `Bob`);
-// console.log(newArr);
-
-// 4 Удалите из массива объектов объект с name == "Anna". На выходе мы должны получить новый из двух элементов объектов без объекта, в котором ключ name == "Anna".
-// const obj = [
-//   {
-//     name: `Anna`,
-//   },
-//   {
-//     name: `Joe`,
-//   },
-//   {
-//     name: `Bob`,
-//   },
-// ];
-
-// const objSec = obj.filter((el) => el.name !== `Anna`);
-// console.log(objSec);
-
-// 5 Необходимо пройтись по всем age и удвоить каждое значение. На выходе мы должны получить новый массив объектов такого же вида, но с удвоенным age
-// const arr = [{ age: 13 }, { age: 19 }, { age: 20 }];
-
-// const newArr = arr.map((el) => {age: el.age * 2});
-// console.log(newArr);
-
-// const obj = [
-//   { age: 13, name: `Yanis` },
-//   { age: 19, name: `Hanna` },
-//   { age: 20, name: `Eva` },
-// ];
-// const newArr = obj.map(element => {
-//   element.age = element.age * 2;
-//   return element;
-// });
-// console.log(newArr);
-
-// 6 На вход подается объект. Необходимо посчитать количество пар (ключ: значение) где значение число и вывести их количество
-// const obj = {
-//   age: 13,
-//   name: `Yanis`,
-//   id: 19,
+//   name: `Dasha`,
+//   age: 18,
+//   city: `Minsk`,
+//   id: 1,
 // };
-// n = 0;
-// for (let val in obj) {
-//   n += 1;
+
+// for (let key in obj) {
+//   !isNaN(obj[key]) ? console.log(obj[key]) : null;
 // }
 
-// console.log(n);
+// jjj
+// let arr = [
+//   {
+//     name: `Sveta`,
+//     age: 29,
+//   },
+//   {
+//     name: `Eva`,
+//     age: 19,
+//   },
+// ];
 
-// 7 На входе 5 значений. Из данных элементов составить массив. Далее необходимо пройтись по каждому из элементов массива и если это число, то создать занести его в новый массив. Если длина массива равна 0, то вывести ‘Массив пуст’. Использовать map
+// let arrA = arr.filter((el) => el.age === 19);
+// console.log(arrA);
 
-// const arr = [1, 2, 3, 4, 5, `Hanna`, `Eva`];
-// let newArr;
-// if (arr.length === 0) {
-//   newArr = `Массив пуст`;
-// } else {
-//   newArr = arr.filter((el) => !isNaN(el));
+// lll
+// let arr = [
+//   {
+//     name: `Sveta`,
+//     age: 29,
+//   },
+//   {
+//     name: `Eva`,
+//     age: 19,
+//   },
+//   {
+//     name: `Dasha`,
+//     age: 18,
+//   },
+//   {
+//     name: `Hanna`,
+//     age: 21,
+//   },
+// ];
+
+// arr.forEach((el) => {
+//   el.age % 2 === 0 ? console.log(el.age) : null;
+// });
+
+// lll
+// const arr = [1, 2, 3, 4, 5, 6];
+// const value = 2;
+
+// let arrA = [];
+// let rez = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//   arrA.push(arr[i]);
 // }
-// console.log(newArr);
+// if (arrA[i] === value) {
+//   rez.push(arrA);
+//   arrA = [];
+// }
 
-// 8  На входе 7 чисел. Из 5 первых элементов составить массив. Далее необходимо пройтись по каждому из элементов массива и если это число НЕ равно 2 другим введенным, то создать занести его в новый массив. Если длина массива равна 0, то вывести ‘Массив пуст’. Добавить проверку на ввод только чисел после каждого введенного элемента. Использовать filter
+// console.log(rez);
 
-// const arr = [1, 2, 3, 4, 5],
-// valueA = 2,
-// valueB = 3;
-// const arrSec = arr.filter(element => element !== valueA && element !== valueB);
-// arrSec.length === 0 ? console.log(`Пустой массив`) : console.log(arrSec);
+// четность нечетность
+// const arr = [1,2,3,4,5,6,7];
+// let chet = [];
+// let nechet = [];
 
-// 9
+// arr.forEach(el => (el%2 === 0) ? chet.push(el) : nechet.push(el));
+
+// элементы больше нуля
+
+const arr = [1, -2, 3, -4, 5, -6, 7];
+
+// let newArr = arr.filter(el => el>0);
+
+let newArr = arr.map((el) => {
+  if (el > 0) return el;
+});
+
+//  const arr = [1,-2, 3,-4, 5, -6,7];
+//  let newArr = arr.some(el => el>0);
