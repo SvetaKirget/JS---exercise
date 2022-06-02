@@ -7,7 +7,7 @@ const nechet = [].sort();
 
 for (let i = 0; i < a; i++) {
   const n = +prompt();
-  Number.isInteger(n) ? arr.push(n) : console.log("nekkorectni vvod");
+  Number.isInteger(n) ? arr.push(n) : null;
 }
 arr.forEach((el) => (el % 2 === 0 ? chet.push(el) : nechet.push(el)));
 

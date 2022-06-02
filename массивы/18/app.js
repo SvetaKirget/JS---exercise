@@ -6,23 +6,12 @@ let sum = 0;
 
 for (let i = 0; i < a; i++) {
   const n = +prompt();
-  !isNaN(n) ? arr.push(n) : console.log("nekkorectni vvod");
-  n === 0 ? !arr.push(n) : null;
+  !isNaN(n) ? arr.push(n) : null;
 }
 
-arr.forEach((el) => (sum += el));
+for (let el of arr) {
+  if (el !== 0) {
+    sum += el;
+  } else break;
+}
 console.log(sum);
-
-// for (let i = 0; i < a; i++) {
-//   const n = +prompt();
-//   !isNaN(n) ? arr.push(n) : console.log("nekkorectni vvod");
-//   for (let p = 0; p < arr.length; p++) {
-//     if (p > 0) sum += arr(i);
-//     if (p === 0) break;
-//   }
-// }
-// n === 0 ? !arr.push(n) : null;
-// console.log(sum);
-
-// //  arr.forEach((el) => (sum += el));
-// // console.log(sum);
