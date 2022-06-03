@@ -14,14 +14,14 @@ arr.forEach((el) => {
 });
 console.log();
 
-
-// let arr = [].sort();
-// let newArr = [];
-// for (let i = 0; i < 5; i++) {
-//     const value = +prompt();
-//     (!isNaN(value)) ? arr.push(value): console.log('nekkorectni vvod');
-// }
-// arr.forEach(el => {
-//     if (!newArr.includes(el)) newArr.push(el);
-// })
-// console.log(newArr);
+// 2 способ
+let arr1 = [].sort();
+let newArr = [];
+for (let i = 0; i < 5; i++) {
+    const value = +prompt();
+    (!isNaN(value)) ? arr1.push(value): console.log('nekkorectni vvod');
+}
+arr1.forEach(el => {
+    if (!newArr.includes(el)) newArr.push(el);
+})
+console.log(newArr);

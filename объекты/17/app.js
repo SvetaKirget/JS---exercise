@@ -12,6 +12,6 @@ for (let key in obj) {
     continue;
   } else arr.push(obj[key]);
 }
-// obj.add = arr;
-// console.log(obj.add);
+obj.add = arr;
+console.log(obj.add);
 console.log(arr);
