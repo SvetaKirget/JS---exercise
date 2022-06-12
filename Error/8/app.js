@@ -1,10 +1,12 @@
 const newMail = `kirgetsveta@gmail.com`;
 
-const findSimbol = (element) => {
-try {
-
-} catch (error) {
+const findSimbol = (str) => {
+  try {
+    if (str.includes(`@`)) return true;
+    else throw new Error(`Not found - @`);
+  } catch (error) {
     return error;
-}
+  }
 };
 
+console.log(findSimbol(newMail));

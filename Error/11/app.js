@@ -1,8 +1,19 @@
 const personName = `Киргет Светлана Николаевна`;
 
-const checkPersonName = (word) => {
-    
-}
+const checkPersonName = (str) => {
+  const splitPersonName = str.split(` `);
+  if (splitPersonName.length === 3) return true;
+  else throw new Error(`Wrong length`);
+};
 
-\w\s\w\s\w\
-\W
+const checkNameInPersonName = (str) => {
+  try {
+    const boolCheck = checkPersonName(str);
+    if (boolCheck || /^[a-zA-Z]+$/g.test(str)) return true;
+    else throw new Error(`Wrong name`);
+  } catch (er) {
+    return er;
+  }
+};
+
+console.log(checkNameInPersonName(personName));
