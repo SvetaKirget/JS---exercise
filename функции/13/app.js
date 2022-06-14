@@ -2,15 +2,23 @@
 
 const arr = [12, 15, 19, 23, 44, 100, 115];
 
-function maxNum(param) {
-  return param.filter((el) => Math.max(el));
-}
-
 function checkNum(param) {
   let counter = 0;
-  param.forEach((element) => isNaN(element)) ? (counter += 1) : null;
-  return counter === 0 ? maxNum(param) : `Error`;
+  param.forEach((element) => (isNaN(element) ? (counter += 1) : null));
+  if (counter > 0) throw new Error(`It's a string`);
+  return true;
 }
 
-let rez = maxNum(arr);
-console.log(rez);
+function maxNum(arr) {
+  try {
+    if (checkNum(arr)) {
+      let max = arr[0];
+      for (let key of arr) if (key > max) max = key;
+      return max;
+    }
+  } catch (er) {
+    return er;
+  }
+}
+
+console.log(maxNum(arr));
