@@ -9,7 +9,7 @@ const doubleOfNumberInObject = (object) => {
   const onlyNumber = [];
   for (let key in object)
     if (!isNaN(object[key])) {
-      return onlyNumber.push(object[key] ** 2);
+      return onlyNumber.push(object[key] * 2);
     }
 };
 
