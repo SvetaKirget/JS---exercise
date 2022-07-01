@@ -3,8 +3,7 @@ const arr = [];
 
 const check = (val) => {
   if (val.value.length === 0) throw new Error("Empty string");
-  if (val.value === /^[a-zA-Zа-яёА-ЯЁ ]+$/) throw new Error("Not a words");
-  // if (val.value === /^[0-9]/) throw new Error("Not a words");
+  if (!/^[a-zA-Zа-яёА-ЯЁ ]+$/g.test(val.value)) throw new Error("Not a words");
   return true;
 };
 
@@ -16,6 +15,7 @@ btn.addEventListener("click", () => {
     if (check(inp)) {
       arr.push(inp.value);
       res.innerHTML = arr;
+      res.style.color = "black";
       inp.value = "";
     }
   } catch (er) {
