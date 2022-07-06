@@ -1,0 +1,24 @@
+const btn = document.querySelector(".btn");
+const array = document.querySelector(".array");
+const result = document.querySelector(".result");
+
+const newArray = [];
+
+const findMaxValue = (array) => {
+  let maxNum = array[0];
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] > maxNum) {
+      maxNum = array[i];
+    }
+  }
+  return maxNum;
+};
+
+btn.addEventListener("click", () => {
+  const inp = document.querySelector(".inp");
+  newArray.push(inp.value);
+  inp.value = "";
+  array.innerHTML = newArray;
+  let maxValue = findMaxValue(newArray);
+  result.innerHTML = maxValue;
+});
